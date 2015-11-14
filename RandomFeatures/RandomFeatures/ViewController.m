@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSUInteger numberOfTimesRedButtonTapped;
 @property (nonatomic) NSUInteger numberOfTimesGreenButtonTapped;
+@property (nonatomic) NSUInteger numberOfTimesBlueButtonTapped;
 
 @property (nonatomic) CGFloat colorWithRedFloat;
 @property (nonatomic) CGFloat colorWithGreenFloat;
@@ -33,6 +34,7 @@
     
     self.numberOfTimesRedButtonTapped = 0;
     self.numberOfTimesGreenButtonTapped = 0;
+    self.numberOfTimesBlueButtonTapped = 0;
 }
 
 - (void)changeBackgroundColor
@@ -50,6 +52,16 @@
     self.numberOfTimesRedButtonTapped += 1;
 }
 
+- (IBAction)makeBackgroundLessRedButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesRedButtonTapped *0.1;
+    self.colorWithRedFloat -= tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesRedButtonTapped += 1;
+}
+
 - (IBAction)makeBackgroundMoreGreenButtonTapped:(id)sender
 {
     CGFloat tappedMultiplier = self.numberOfTimesGreenButtonTapped *0.1;
@@ -58,6 +70,36 @@
     [self changeBackgroundColor];
     
     self.numberOfTimesGreenButtonTapped += 1;
+}
+
+- (IBAction)makeBackgroundLessGreenButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesGreenButtonTapped *0.1;
+    self.colorWithGreenFloat -= tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesGreenButtonTapped += 1;
+}
+
+- (IBAction)makeBackgroundMoreBlueButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesBlueButtonTapped *0.1;
+    self.colorWithBlueFloat += tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesBlueButtonTapped += 1;
+}
+
+- (IBAction)makeBackgroundLessBlueButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesBlueButtonTapped *0.1;
+    self.colorWithBlueFloat -= tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesBlueButtonTapped += 1;
 }
 
 @end
