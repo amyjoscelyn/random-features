@@ -13,6 +13,7 @@
 @property (nonatomic) NSUInteger numberOfTimesRedButtonTapped;
 @property (nonatomic) NSUInteger numberOfTimesGreenButtonTapped;
 @property (nonatomic) NSUInteger numberOfTimesBlueButtonTapped;
+@property (nonatomic) NSUInteger numberOfTimesAlphaButtonTapped;
 
 @property (nonatomic) CGFloat colorWithRedFloat;
 @property (nonatomic) CGFloat colorWithGreenFloat;
@@ -30,7 +31,7 @@
     self.colorWithRedFloat = 0.0;
     self.colorWithGreenFloat = 0.0;
     self.colorWithBlueFloat = 0.0;
-    self.alphaFloat = 0.25;
+    self.alphaFloat = 0.5;
     
     self.numberOfTimesRedButtonTapped = 0;
     self.numberOfTimesGreenButtonTapped = 0;
@@ -59,7 +60,7 @@
     
     [self changeBackgroundColor];
     
-    self.numberOfTimesRedButtonTapped += 1;
+    self.numberOfTimesRedButtonTapped -= 1;
 }
 
 - (IBAction)makeBackgroundMoreGreenButtonTapped:(id)sender
@@ -79,7 +80,7 @@
     
     [self changeBackgroundColor];
     
-    self.numberOfTimesGreenButtonTapped += 1;
+    self.numberOfTimesGreenButtonTapped -= 1;
 }
 
 - (IBAction)makeBackgroundMoreBlueButtonTapped:(id)sender
@@ -99,7 +100,27 @@
     
     [self changeBackgroundColor];
     
-    self.numberOfTimesBlueButtonTapped += 1;
+    self.numberOfTimesBlueButtonTapped -= 1;
+}
+
+- (IBAction)addAlphaToBackgroundButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesAlphaButtonTapped *0.05;
+    self.alphaFloat += tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesAlphaButtonTapped += 1;
+}
+
+- (IBAction)takeAwayAlphaFromBackgroundButtonTapped:(id)sender
+{
+    CGFloat tappedMultiplier = self.numberOfTimesAlphaButtonTapped *0.05;
+    self.alphaFloat -= tappedMultiplier;
+    
+    [self changeBackgroundColor];
+    
+    self.numberOfTimesAlphaButtonTapped -= 1;
 }
 
 @end

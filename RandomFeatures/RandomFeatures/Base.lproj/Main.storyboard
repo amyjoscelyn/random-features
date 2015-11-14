@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="57" width="320" height="454"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wda-u7-3cl">
-                                        <rect key="frame" x="45" y="0.0" width="230" height="98"/>
+                                        <rect key="frame" x="45" y="0.0" width="230" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs5-QU-Khn">
-                                                <rect key="frame" x="0.0" y="34" width="95" height="30"/>
+                                                <rect key="frame" x="0.0" y="12" width="95" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   More Red!   "/>
@@ -37,7 +37,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqM-3U-CAK">
-                                                <rect key="frame" x="135" y="34" width="95" height="30"/>
+                                                <rect key="frame" x="135" y="12" width="95" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   Less Red!   "/>
@@ -52,10 +52,10 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="TOa-Wl-YZE">
-                                        <rect key="frame" x="31" y="178" width="258" height="98"/>
+                                        <rect key="frame" x="31" y="134" width="258" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-QF-tMf">
-                                                <rect key="frame" x="0.0" y="34" width="109" height="30"/>
+                                                <rect key="frame" x="0.0" y="12" width="109" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   More Green!   "/>
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtU-55-qFO">
-                                                <rect key="frame" x="149" y="34" width="109" height="30"/>
+                                                <rect key="frame" x="149" y="12" width="109" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   Less Green!   "/>
@@ -82,10 +82,10 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cOI-op-jP9">
-                                        <rect key="frame" x="42" y="356" width="236" height="98"/>
+                                        <rect key="frame" x="42" y="267" width="236" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8V-f2-WNC">
-                                                <rect key="frame" x="0.0" y="34" width="98" height="30"/>
+                                                <rect key="frame" x="0.0" y="12" width="98" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   More Blue!   "/>
@@ -97,7 +97,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSP-sU-9gw">
-                                                <rect key="frame" x="138" y="34" width="98" height="30"/>
+                                                <rect key="frame" x="138" y="12" width="98" height="30"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="   Less Blue!   "/>
@@ -106,6 +106,36 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="makeBackgroundLessBlueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naI-Q0-M5e"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wIl-ch-sY7">
+                                        <rect key="frame" x="33" y="401" width="254" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mn2-sW-hUW">
+                                                <rect key="frame" x="0.0" y="11" width="107" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="   More Alpha!   "/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addAlphaToBackgroundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1kV-PW-Sb8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqX-8W-89T">
+                                                <rect key="frame" x="147" y="11" width="107" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="   Less Alpha!   "/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="takeAwayAlphaFromBackgroundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iA-Z6-BOW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
