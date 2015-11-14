@@ -20,6 +20,10 @@
 @property (nonatomic) CGFloat colorWithBlueFloat;
 @property (nonatomic) CGFloat alphaFloat;
 
+@property (nonatomic) NSUInteger tapCapMax;
+@property (nonatomic) NSUInteger tapCapMin;
+@property (nonatomic) CGFloat multiplier;
+
 @end
 
 @implementation ViewController
@@ -28,14 +32,22 @@
 {
     [super viewDidLoad];
     
+    self.multiplier = 0.05;
+    
+    CGFloat x = 1 / self.multiplier;
+    
     self.colorWithRedFloat = 0.0;
     self.colorWithGreenFloat = 0.0;
     self.colorWithBlueFloat = 0.0;
     self.alphaFloat = 0.5;
     
-    self.numberOfTimesRedButtonTapped = 0;
-    self.numberOfTimesGreenButtonTapped = 0;
-    self.numberOfTimesBlueButtonTapped = 0;
+    self.numberOfTimesRedButtonTapped = self.colorWithRedFloat;
+    self.numberOfTimesGreenButtonTapped = self.colorWithGreenFloat;
+    self.numberOfTimesBlueButtonTapped = self.colorWithBlueFloat;
+    self.numberOfTimesAlphaButtonTapped = self.alphaFloat * x;
+    
+    self.tapCapMax = x;
+    self.tapCapMin = 0;
 }
 
 - (void)changeBackgroundColor
@@ -45,82 +57,130 @@
 
 - (IBAction)makeBackgroundMoreRedButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesRedButtonTapped *0.1;
-    self.colorWithRedFloat += tappedMultiplier;
+    if (self.numberOfTimesRedButtonTapped == self.tapCapMax)
+    {
+        NSLog(@"Red value can't go any higher.");
+        return;
+    }
+    self.numberOfTimesRedButtonTapped++;
+    
+    self.colorWithRedFloat = self.numberOfTimesRedButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Red: %lu, %.2f", self.numberOfTimesRedButtonTapped, self.colorWithRedFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesRedButtonTapped += 1;
 }
 
 - (IBAction)makeBackgroundLessRedButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesRedButtonTapped *0.1;
-    self.colorWithRedFloat -= tappedMultiplier;
+    if (self.numberOfTimesRedButtonTapped == self.tapCapMin)
+    {
+        NSLog(@"Red value can't go any lower.");
+        return;
+    }
+    self.numberOfTimesRedButtonTapped--;
+    
+    self.colorWithRedFloat = self.numberOfTimesRedButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Red: %lu, %.2f", self.numberOfTimesRedButtonTapped,self.colorWithRedFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesRedButtonTapped -= 1;
 }
 
 - (IBAction)makeBackgroundMoreGreenButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesGreenButtonTapped *0.1;
-    self.colorWithGreenFloat += tappedMultiplier;
+    if (self.numberOfTimesGreenButtonTapped == self.tapCapMax)
+    {
+        NSLog(@"Green value can't go any higher.");
+        return;
+    }
+    self.numberOfTimesGreenButtonTapped++;
+    
+    self.colorWithGreenFloat = self.numberOfTimesGreenButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Green: %lu, %.2f", self.numberOfTimesGreenButtonTapped, self.colorWithGreenFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesGreenButtonTapped += 1;
 }
 
 - (IBAction)makeBackgroundLessGreenButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesGreenButtonTapped *0.1;
-    self.colorWithGreenFloat -= tappedMultiplier;
+    if (self.numberOfTimesGreenButtonTapped == self.tapCapMin)
+    {
+        NSLog(@"Green value can't go any lower.");
+        return;
+    }
+    self.numberOfTimesGreenButtonTapped--;
+    
+    self.colorWithGreenFloat = self.numberOfTimesGreenButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Green: %lu, %.2f", self.numberOfTimesGreenButtonTapped, self.colorWithGreenFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesGreenButtonTapped -= 1;
 }
 
 - (IBAction)makeBackgroundMoreBlueButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesBlueButtonTapped *0.1;
-    self.colorWithBlueFloat += tappedMultiplier;
+    if (self.numberOfTimesBlueButtonTapped == self.tapCapMax)
+    {
+        NSLog(@"Blue value can't go any higher.");
+        return;
+    }
+    self.numberOfTimesBlueButtonTapped++;
+    
+    self.colorWithBlueFloat = self.numberOfTimesBlueButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Blue: %lu, %.2f", self.numberOfTimesBlueButtonTapped, self.colorWithBlueFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesBlueButtonTapped += 1;
 }
 
 - (IBAction)makeBackgroundLessBlueButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesBlueButtonTapped *0.1;
-    self.colorWithBlueFloat -= tappedMultiplier;
+    if (self.numberOfTimesBlueButtonTapped == self.tapCapMin)
+    {
+        NSLog(@"Blue value can't go any lower.");
+        return;
+    }
+    self.numberOfTimesBlueButtonTapped--;
+    
+    self.colorWithBlueFloat = self.numberOfTimesBlueButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Blue: %lu, %.2f", self.numberOfTimesBlueButtonTapped, self.colorWithBlueFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesBlueButtonTapped -= 1;
 }
 
 - (IBAction)addAlphaToBackgroundButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesAlphaButtonTapped *0.05;
-    self.alphaFloat += tappedMultiplier;
+    if (self.numberOfTimesAlphaButtonTapped == self.tapCapMax)
+    {
+        NSLog(@"Alpha value can't go any higher.");
+        return;
+    }
+    self.numberOfTimesAlphaButtonTapped++;
+    
+    self.alphaFloat = self.numberOfTimesAlphaButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Alpha: %lu, %.2f", self.numberOfTimesAlphaButtonTapped, self.alphaFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesAlphaButtonTapped += 1;
 }
 
 - (IBAction)takeAwayAlphaFromBackgroundButtonTapped:(id)sender
 {
-    CGFloat tappedMultiplier = self.numberOfTimesAlphaButtonTapped *0.05;
-    self.alphaFloat -= tappedMultiplier;
+    if (self.numberOfTimesAlphaButtonTapped == self.tapCapMin)
+    {
+        NSLog(@"Alpha value can't go any lower.");
+        return;
+    }
+    self.numberOfTimesAlphaButtonTapped--;
+    
+    self.alphaFloat = self.numberOfTimesAlphaButtonTapped * self.multiplier;
+    
+    NSLog(@"Tapped Alpha: %lu, %.2f", self.numberOfTimesAlphaButtonTapped, self.alphaFloat);
     
     [self changeBackgroundColor];
-    
-    self.numberOfTimesAlphaButtonTapped -= 1;
 }
 
 @end
