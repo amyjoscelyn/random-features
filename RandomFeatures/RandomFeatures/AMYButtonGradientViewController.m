@@ -9,6 +9,19 @@
 #import "AMYButtonGradientViewController.h"
 
 @interface AMYButtonGradientViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *topButtonOne;
+@property (weak, nonatomic) IBOutlet UIButton *topButtonTwo;
+@property (weak, nonatomic) IBOutlet UIButton *topButtonThree;
+@property (weak, nonatomic) IBOutlet UIButton *topButtonFour;
+@property (weak, nonatomic) IBOutlet UIButton *topButtonFive;
+@property (weak, nonatomic) IBOutlet UIButton *topButtonSix;
+
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonOne;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonTwo;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonThree;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonFour;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonFive;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButtonSix;
 
 @end
 
@@ -17,6 +30,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.topButtonOne setTintColor:[UIColor redColor]];
+    [self.topButtonTwo setTintColor:[UIColor orangeColor]];
+    [self.topButtonThree setTintColor:[UIColor yellowColor]];
+    [self.topButtonFour setTintColor:[UIColor greenColor]];
+    [self.topButtonFive setTintColor:[UIColor blueColor]];
+    [self.topButtonSix setTintColor:[UIColor purpleColor]];
+    
+    [self.bottomButtonOne setTintColor:[UIColor blackColor]];
+    [self.bottomButtonTwo setTintColor:[UIColor grayColor]];
+    [self.bottomButtonThree setTintColor:[UIColor whiteColor]];
+    [self.bottomButtonFour setTintColor:[UIColor brownColor]];
+    [self.bottomButtonFive setTintColor:[UIColor cyanColor]];
+    [self.bottomButtonSix setTintColor:[UIColor magentaColor]];
 }
 
 - (IBAction)buttonOneTopGradientTapped:(id)sender

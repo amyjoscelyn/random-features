@@ -19,32 +19,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-xl-gbL">
-                                <rect key="frame" x="54" y="80" width="178" height="76"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-xl-gbL">
+                                <rect key="frame" x="34" y="80" width="128" height="76"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-6Z-EBn">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-6Z-EBn">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2Y-vO-QfI">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonOneTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="tor-iT-tll"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-OZ-7Kt">
-                                                <rect key="frame" x="65" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="45" y="0.0" width="38" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonTwoTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="3Rq-e0-W3y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP5-DL-2t6">
-                                                <rect key="frame" x="129" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="89" y="0.0" width="39" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonThreeTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="Fy0-cS-cWA"/>
                                                 </connections>
@@ -52,29 +55,32 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L20-Ho-VBn">
-                                        <rect key="frame" x="0.0" y="46" width="178" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L20-Ho-VBn">
+                                        <rect key="frame" x="0.0" y="38" width="128" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhJ-bg-uuh">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonFourTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="zGb-6M-ENL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMn-t5-AMm">
-                                                <rect key="frame" x="65" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="45" y="0.0" width="38" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonFiveTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="C1t-0F-qSH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hST-D3-OSl">
-                                                <rect key="frame" x="129" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="91" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonSixTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="RwG-h5-ix1"/>
                                                 </connections>
@@ -85,32 +91,35 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3LB-gR-zaT">
-                                <rect key="frame" x="88" y="353" width="178" height="76"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3LB-gR-zaT">
+                                <rect key="frame" x="158" y="383" width="128" height="76"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-d7-26M">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-d7-26M">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-n0-NKg">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonOneBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="h2P-43-2en"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztp-Bw-Gcg">
-                                                <rect key="frame" x="62" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="45" y="0.0" width="38" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonTwoBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="WmG-ml-Cys"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLv-ae-auw">
-                                                <rect key="frame" x="124" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="91" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonThreeBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="9nV-Qs-oCz"/>
                                                 </connections>
@@ -118,29 +127,32 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-Ij-40s">
-                                        <rect key="frame" x="0.0" y="46" width="170" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-Ij-40s">
+                                        <rect key="frame" x="0.0" y="38" width="128" height="38"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6H-Xb-Lue">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonFourBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="lbk-Em-Q0W"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJp-S8-cQc">
-                                                <rect key="frame" x="62" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="45" y="0.0" width="38" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonFiveBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="K1l-Xd-eip"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCg-gr-gTC">
-                                                <rect key="frame" x="124" y="0.0" width="46" height="30"/>
+                                                <rect key="frame" x="91" y="0.0" width="37" height="38"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="◉"/>
                                                 <connections>
                                                     <action selector="buttonSixBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="Lja-b5-cA5"/>
                                                 </connections>
@@ -156,17 +168,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jtv-CB-kJt" firstAttribute="top" secondItem="Tcl-xl-gbL" secondAttribute="bottom" constant="363" id="8TV-ah-Q4J"/>
-                            <constraint firstItem="3LB-gR-zaT" firstAttribute="top" secondItem="spF-s9-CpC" secondAttribute="bottom" constant="333" id="MSI-3t-e8m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3LB-gR-zaT" secondAttribute="trailing" constant="38" id="REf-H2-fCA"/>
+                            <constraint firstItem="3LB-gR-zaT" firstAttribute="top" secondItem="spF-s9-CpC" secondAttribute="bottom" constant="363" id="MSI-3t-e8m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3LB-gR-zaT" secondAttribute="trailing" constant="18" id="REf-H2-fCA"/>
                             <constraint firstItem="Tcl-xl-gbL" firstAttribute="top" secondItem="spF-s9-CpC" secondAttribute="bottom" constant="60" id="RXI-xC-yPx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tcl-xl-gbL" secondAttribute="trailing" constant="72" id="kWi-ze-C5j"/>
-                            <constraint firstItem="jtv-CB-kJt" firstAttribute="top" secondItem="3LB-gR-zaT" secondAttribute="bottom" constant="90" id="lZK-Ka-ih9"/>
-                            <constraint firstItem="3LB-gR-zaT" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="72" id="rVV-Bx-18j"/>
-                            <constraint firstItem="Tcl-xl-gbL" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="38" id="rgv-Ta-InX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tcl-xl-gbL" secondAttribute="trailing" constant="142" id="kWi-ze-C5j"/>
+                            <constraint firstItem="jtv-CB-kJt" firstAttribute="top" secondItem="3LB-gR-zaT" secondAttribute="bottom" constant="60" id="lZK-Ka-ih9"/>
+                            <constraint firstItem="3LB-gR-zaT" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="142" id="rVV-Bx-18j"/>
+                            <constraint firstItem="Tcl-xl-gbL" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="18" id="rgv-Ta-InX"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kdB-X0-9kH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bottomButtonFive" destination="SJp-S8-cQc" id="pNg-du-QAI"/>
+                        <outlet property="bottomButtonFour" destination="A6H-Xb-Lue" id="dwt-ZV-QQy"/>
+                        <outlet property="bottomButtonOne" destination="ZCD-n0-NKg" id="D08-SH-eLb"/>
+                        <outlet property="bottomButtonSix" destination="HCg-gr-gTC" id="AvX-t8-3Me"/>
+                        <outlet property="bottomButtonThree" destination="XLv-ae-auw" id="TH1-wW-jM1"/>
+                        <outlet property="bottomButtonTwo" destination="ztp-Bw-Gcg" id="rms-Zj-idu"/>
+                        <outlet property="topButtonFive" destination="WMn-t5-AMm" id="B3l-8x-Cic"/>
+                        <outlet property="topButtonFour" destination="uhJ-bg-uuh" id="har-mj-d31"/>
+                        <outlet property="topButtonOne" destination="z2Y-vO-QfI" id="wdf-kX-H2j"/>
+                        <outlet property="topButtonSix" destination="hST-D3-OSl" id="KZe-1d-M7W"/>
+                        <outlet property="topButtonThree" destination="WP5-DL-2t6" id="ska-Kc-NGu"/>
+                        <outlet property="topButtonTwo" destination="Q4g-OZ-7Kt" id="Vnl-p5-VSl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGx-sQ-OsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
