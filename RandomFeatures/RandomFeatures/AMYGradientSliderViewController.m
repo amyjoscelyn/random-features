@@ -94,12 +94,14 @@
     if (self.gradientSegmentedControl.selectedSegmentIndex == 0)
     {
         self.isTopColor = YES;
+        [self.topColor getRed:self.colorWithRedFloat green:self.colorWithGreenFloat blue:self.colorWithBlueFloat alpha:self.alphaFloat]; //I don't think this is how this is supposed to work.  I'll have to read the docs for the method.
     }
     else
     {
         self.isTopColor = NO;
     }
     NSLog(@"Are we on the top color? %d", self.isTopColor);
+    
 }
 
 - (IBAction)colorSegmentChanged:(id)sender
@@ -126,5 +128,8 @@
         self.colorSlider.value = self.alphaFloat;
     }
 }
+
+//okay.  so what i'm trying to do is get the slider to remember the location of the color the property has been set at.  right now, however, it's saving it too well; whenever i switch top/bottom and press the slider the color changes automatically to the "current" color i had the bottom/top saved as.  so i'll need to check the BOOL and have the colors saved to two separate kinds of color properties
+//maybe i can have a generic "get color" method, where i get the UIColor based off of the individual float values, and then set that as a property of top/bottom.  Then i can call the method that will use those saved colors to set the gradient.
 
 @end
