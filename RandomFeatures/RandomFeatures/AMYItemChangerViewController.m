@@ -25,6 +25,7 @@
 
     self.items = @[
                    @"🦁", @"🐶", @"🐹", @"🐯", @"🐙", @"🐒", @"🐦", @"🐺", @"🐴", @"🐱", @"🐰"];
+    self.itemLabel.text = self.items[4];
 }
 
 - (IBAction)sliderValueChanged:(id)sender
