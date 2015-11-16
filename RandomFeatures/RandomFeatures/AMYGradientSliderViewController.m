@@ -43,6 +43,7 @@
     self.colorWithGreenFloat = 0.0;
     self.colorWithBlueFloat = 0.0;
     self.alphaFloat = 0.0;
+    self.colorSlider.value = self.colorWithRedFloat;
     
     self.gradientLayer = [CAGradientLayer layer];
     self.gradientLayer.frame = self.view.frame;
@@ -107,20 +108,23 @@
     if (segmentChosen == 0)
     {
         self.currentColor = @"Red";
+        self.colorSlider.value = self.colorWithRedFloat;
     }
     else if (segmentChosen == 1)
     {
         self.currentColor = @"Green";
+        self.colorSlider.value = self.colorWithGreenFloat;
     }
     else if (segmentChosen == 2)
     {
         self.currentColor = @"Blue";
+        self.colorSlider.value = self.colorWithBlueFloat;
     }
     else
     {
         self.currentColor = @"Alpha";
+        self.colorSlider.value = self.alphaFloat;
     }
-    self.colorSlider.value = 
 }
 
 @end
