@@ -19,6 +19,13 @@
 
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;
 @property (nonatomic, strong) NSArray *colorsArray;
+@property (nonatomic, strong) UIColor *topColor;
+@property (nonatomic, strong) UIColor *bottomColor;
+
+@property (nonatomic) CGFloat colorWithRedFloat;
+@property (nonatomic) CGFloat colorWithGreenFloat;
+@property (nonatomic) CGFloat colorWithBlueFloat;
+@property (nonatomic) CGFloat alphaFloat;
 
 @end
 
@@ -30,17 +37,55 @@
     
     self.isTopColor = YES;
     self.currentColor = @"Red";
+    self.bottomColor = [UIColor blackColor];
+    
+    self.colorWithRedFloat = 0.0;
+    self.colorWithGreenFloat = 0.0;
+    self.colorWithBlueFloat = 0.0;
+    self.alphaFloat = 0.0;
     
     self.gradientLayer = [CAGradientLayer layer];
-    self.colorsArray = @[ (id)[UIColor blueColor].CGColor, (id)[UIColor blackColor].CGColor ];
-    self.gradientLayer.colors = self.colorsArray;
     self.gradientLayer.frame = self.view.frame;
     [self.view.layer insertSublayer:self.gradientLayer atIndex:0];
+    [self changeBackgroundGradient];
+}
+
+- (void)changeBackgroundGradient
+{
+    UIColor *color = [UIColor colorWithRed:self.colorWithRedFloat green:self.colorWithGreenFloat blue:self.colorWithBlueFloat alpha:self.alphaFloat];
+    
+    if (self.isTopColor)
+    {
+        self.topColor = color;
+    }
+    else
+    {
+        self.bottomColor = color;
+    }
+    self.colorsArray = @[ (id)self.topColor.CGColor, (id)self.bottomColor.CGColor ];
+    self.gradientLayer.colors = self.colorsArray;
 }
 
 - (IBAction)colorSliderValueChanged:(id)sender
 {
+    if ([self.currentColor isEqualToString:@"Red"])
+    {
+        self.colorWithRedFloat = self.colorSlider.value;
+    }
+    else if ([self.currentColor isEqualToString:@"Green"])
+    {
+        self.colorWithGreenFloat = self.colorSlider.value;
+    }
+    else if ([self.currentColor isEqualToString:@"Blue"])
+    {
+        self.colorWithBlueFloat = self.colorSlider.value;
+    }
+    else if ([self.currentColor isEqualToString:@"Alpha"])
+    {
+        self.alphaFloat = self.colorSlider.value;
+    }
     
+    [self changeBackgroundGradient];
 }
 
 - (IBAction)gradientLayerChanged:(id)sender
@@ -75,7 +120,7 @@
     {
         self.currentColor = @"Alpha";
     }
-    NSLog(@"current color: %@", self.currentColor);
+    self.colorSlider.value = 
 }
 
 @end
