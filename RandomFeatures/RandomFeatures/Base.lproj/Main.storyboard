@@ -394,6 +394,65 @@
             </objects>
             <point key="canvasLocation" x="1055" y="327"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="TwL-9L-SJY">
+            <objects>
+                <viewController id="tCX-8L-7WS" customClass="AMYGradientSliderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0MI-zT-Zz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="MY9-8D-Ciu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YbK-lL-wb0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-pB-Vda">
+                                <rect key="frame" x="20" y="133" width="280" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Alpha"/>
+                                </segments>
+                                <connections>
+                                    <action selector="colorSegmentChanged:" destination="tCX-8L-7WS" eventType="valueChanged" id="b44-Mb-8do"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jyu-ew-y0t">
+                                <rect key="frame" x="18" y="191" width="284" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="colorSliderValueChanged:" destination="tCX-8L-7WS" eventType="valueChanged" id="ZS3-YR-1v4"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-13-KS3">
+                                <rect key="frame" x="100" y="292" width="121" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Top"/>
+                                    <segment title="Bottom"/>
+                                </segments>
+                                <connections>
+                                    <action selector="gradientLayerChanged:" destination="tCX-8L-7WS" eventType="valueChanged" id="6Tl-sJ-koT"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="trf-Lj-9Pd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colorSlider" destination="Jyu-ew-y0t" id="D0e-vF-lRZ"/>
+                        <outlet property="colorsSegmentedControl" destination="r3t-pB-Vda" id="yaB-Kp-HF9"/>
+                        <outlet property="gradientSegmentedControl" destination="w2I-13-KS3" id="QUn-7c-xO6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHv-E6-D32" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-205" y="74"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K1c-Yb-LDA">
             <objects>
@@ -410,6 +469,7 @@
                         <segue destination="GmQ-7W-gNN" kind="relationship" relationship="viewControllers" id="vjo-FR-M3j"/>
                         <segue destination="Tgm-02-Ky0" kind="relationship" relationship="viewControllers" id="mYD-t3-Si7"/>
                         <segue destination="le6-h1-Idt" kind="relationship" relationship="viewControllers" id="7bk-0o-o2q"/>
+                        <segue destination="tCX-8L-7WS" kind="relationship" relationship="viewControllers" id="JTz-Ea-4Xk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGr-fT-vjU" userLabel="First Responder" sceneMemberID="firstResponder"/>

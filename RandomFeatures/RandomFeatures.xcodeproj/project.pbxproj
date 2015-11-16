@@ -18,6 +18,7 @@
 		3D349A831BF6CAFC00764558 /* AMYColorSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D349A821BF6CAFC00764558 /* AMYColorSliderViewController.m */; };
 		3D349A861BFA464E00764558 /* AMYButtonGradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D349A851BFA464E00764558 /* AMYButtonGradientViewController.m */; };
 		3D349A891BFA729F00764558 /* AMYItemChangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D349A881BFA729F00764558 /* AMYItemChangerViewController.m */; };
+		3DFD684B1BFA77F40067EE98 /* AMYGradientSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		3D349A851BFA464E00764558 /* AMYButtonGradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYButtonGradientViewController.m; sourceTree = "<group>"; };
 		3D349A871BFA729F00764558 /* AMYItemChangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYItemChangerViewController.h; sourceTree = "<group>"; };
 		3D349A881BFA729F00764558 /* AMYItemChangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYItemChangerViewController.m; sourceTree = "<group>"; };
+		3DFD68491BFA77F40067EE98 /* AMYGradientSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYGradientSliderViewController.h; sourceTree = "<group>"; };
+		3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYGradientSliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				3D349A851BFA464E00764558 /* AMYButtonGradientViewController.m */,
 				3D349A871BFA729F00764558 /* AMYItemChangerViewController.h */,
 				3D349A881BFA729F00764558 /* AMYItemChangerViewController.m */,
+				3DFD68491BFA77F40067EE98 /* AMYGradientSliderViewController.h */,
+				3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */,
 				3D349A5A1BF69B9400764558 /* Assets.xcassets */,
 				3D349A5C1BF69B9400764558 /* LaunchScreen.storyboard */,
 				3D349A5F1BF69B9400764558 /* Info.plist */,
@@ -286,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D349A561BF69B9400764558 /* ViewController.m in Sources */,
+				3DFD684B1BFA77F40067EE98 /* AMYGradientSliderViewController.m in Sources */,
 				3D349A831BF6CAFC00764558 /* AMYColorSliderViewController.m in Sources */,
 				3D349A891BFA729F00764558 /* AMYItemChangerViewController.m in Sources */,
 				3D349A531BF69B9400764558 /* AppDelegate.m in Sources */,
@@ -516,6 +522,7 @@
 				3D349A7A1BF69B9500764558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D349A7B1BF69B9500764558 /* Build configuration list for PBXNativeTarget "RandomFeaturesTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				3D349A7D1BF69B9500764558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D349A7E1BF69B9500764558 /* Build configuration list for PBXNativeTarget "RandomFeaturesUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				3D349A801BF69B9500764558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
