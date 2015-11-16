@@ -8,6 +8,47 @@
     </dependencies>
     <scenes>
         <!--Item-->
+        <scene sceneID="3Bv-ih-Tl6">
+            <objects>
+                <viewController id="le6-h1-Idt" customClass="AMYItemChangerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YN4-vP-ULu"/>
+                        <viewControllerLayoutGuide type="bottom" id="M2d-iT-7OP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8pe-Wb-aOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-vc-XQk">
+                                <rect key="frame" x="40" y="218" width="241" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="le6-h1-Idt" eventType="valueChanged" id="cGv-TE-gI9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-PD-x2o">
+                                <rect key="frame" x="129" y="134" width="63" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Cx0-7X-uP5"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="itemLabel" destination="fAl-PD-x2o" id="LTH-E8-V5U"/>
+                        <outlet property="slider" destination="gFO-vc-XQk" id="kY6-eK-M1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7R-0Z-ZIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="-389"/>
+        </scene>
+        <!--Gradient-->
         <scene sceneID="tZt-be-sKh">
             <objects>
                 <viewController id="Tgm-02-Ky0" customClass="AMYButtonGradientViewController" sceneMemberID="viewController">
@@ -177,7 +218,7 @@
                             <constraint firstItem="Tcl-xl-gbL" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="18" id="rgv-Ta-InX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kdB-X0-9kH"/>
+                    <tabBarItem key="tabBarItem" title="Gradient" id="kdB-X0-9kH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bottomButtonFive" destination="SJp-S8-cQc" id="pNg-du-QAI"/>
@@ -368,6 +409,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="O6s-2n-XQa"/>
                         <segue destination="GmQ-7W-gNN" kind="relationship" relationship="viewControllers" id="vjo-FR-M3j"/>
                         <segue destination="Tgm-02-Ky0" kind="relationship" relationship="viewControllers" id="mYD-t3-Si7"/>
+                        <segue destination="le6-h1-Idt" kind="relationship" relationship="viewControllers" id="7bk-0o-o2q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGr-fT-vjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
