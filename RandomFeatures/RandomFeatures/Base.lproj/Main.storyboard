@@ -3,9 +3,175 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="tZt-be-sKh">
+            <objects>
+                <viewController id="Tgm-02-Ky0" customClass="AMYButtonGradientViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="spF-s9-CpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="jtv-CB-kJt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MT7-7m-nec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-xl-gbL">
+                                <rect key="frame" x="54" y="80" width="178" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-6Z-EBn">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2Y-vO-QfI">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonOneTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="tor-iT-tll"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-OZ-7Kt">
+                                                <rect key="frame" x="65" y="0.0" width="48" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTwoTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="3Rq-e0-W3y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP5-DL-2t6">
+                                                <rect key="frame" x="129" y="0.0" width="49" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonThreeTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="Fy0-cS-cWA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L20-Ho-VBn">
+                                        <rect key="frame" x="0.0" y="46" width="178" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhJ-bg-uuh">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonFourTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="zGb-6M-ENL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMn-t5-AMm">
+                                                <rect key="frame" x="65" y="0.0" width="48" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonFiveTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="C1t-0F-qSH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hST-D3-OSl">
+                                                <rect key="frame" x="129" y="0.0" width="49" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonSixTopGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="RwG-h5-ix1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3LB-gR-zaT">
+                                <rect key="frame" x="88" y="353" width="178" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-d7-26M">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-n0-NKg">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonOneBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="h2P-43-2en"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztp-Bw-Gcg">
+                                                <rect key="frame" x="62" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTwoBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="WmG-ml-Cys"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLv-ae-auw">
+                                                <rect key="frame" x="124" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonThreeBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="9nV-Qs-oCz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-Ij-40s">
+                                        <rect key="frame" x="0.0" y="46" width="170" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6H-Xb-Lue">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonFourBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="lbk-Em-Q0W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJp-S8-cQc">
+                                                <rect key="frame" x="62" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonFiveBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="K1l-Xd-eip"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCg-gr-gTC">
+                                                <rect key="frame" x="124" y="0.0" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonSixBottomGradientTapped:" destination="Tgm-02-Ky0" eventType="touchUpInside" id="Lja-b5-cA5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jtv-CB-kJt" firstAttribute="top" secondItem="Tcl-xl-gbL" secondAttribute="bottom" constant="363" id="8TV-ah-Q4J"/>
+                            <constraint firstItem="3LB-gR-zaT" firstAttribute="top" secondItem="spF-s9-CpC" secondAttribute="bottom" constant="333" id="MSI-3t-e8m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3LB-gR-zaT" secondAttribute="trailing" constant="38" id="REf-H2-fCA"/>
+                            <constraint firstItem="Tcl-xl-gbL" firstAttribute="top" secondItem="spF-s9-CpC" secondAttribute="bottom" constant="60" id="RXI-xC-yPx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tcl-xl-gbL" secondAttribute="trailing" constant="72" id="kWi-ze-C5j"/>
+                            <constraint firstItem="jtv-CB-kJt" firstAttribute="top" secondItem="3LB-gR-zaT" secondAttribute="bottom" constant="90" id="lZK-Ka-ih9"/>
+                            <constraint firstItem="3LB-gR-zaT" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="72" id="rVV-Bx-18j"/>
+                            <constraint firstItem="Tcl-xl-gbL" firstAttribute="leading" secondItem="MT7-7m-nec" secondAttribute="leadingMargin" constant="38" id="rgv-Ta-InX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kdB-X0-9kH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGx-sQ-OsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="-389"/>
+        </scene>
         <!--Buttons-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -175,6 +341,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="O6s-2n-XQa"/>
                         <segue destination="GmQ-7W-gNN" kind="relationship" relationship="viewControllers" id="vjo-FR-M3j"/>
+                        <segue destination="Tgm-02-Ky0" kind="relationship" relationship="viewControllers" id="mYD-t3-Si7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGr-fT-vjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
