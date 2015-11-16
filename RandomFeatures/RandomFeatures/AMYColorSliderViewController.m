@@ -10,8 +10,14 @@
 
 @interface AMYColorSliderViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *sliderValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *colorSliderValueLabel;
 @property (weak, nonatomic) IBOutlet UISlider *colorSlider;
+
+@property (weak, nonatomic) IBOutlet UILabel *alphaSliderValueLabel;
+@property (weak, nonatomic) IBOutlet UISlider *alphaSlider;
+
+@property (nonatomic) CGFloat tintValue;
+@property (nonatomic) CGFloat alphaValue;
 
 @end
 
@@ -21,16 +27,36 @@
 {
     [super viewDidLoad];
     
-    self.sliderValueLabel.text = [NSString stringWithFormat:@"%f", self.colorSlider.value];
+    self.colorSliderValueLabel.text = [NSString stringWithFormat:@"%f", self.colorSlider.value];
+    self.alphaSliderValueLabel.text = [NSString stringWithFormat:@"%f", self.alphaSlider.value];
     
-    self.view.backgroundColor = [UIColor colorWithWhite:self.colorSlider.value alpha:0.5];
+    self.tintValue = 0.5;
+    self.alphaValue = 0.5;
+    
+    self.view.backgroundColor = [UIColor colorWithWhite:self.tintValue alpha:self.alphaValue];
 }
 
 - (IBAction)colorSliderValueChanged:(id)sender
 {
-    self.sliderValueLabel.text = [NSString stringWithFormat:@"%f", self.colorSlider.value];
+    self.colorSliderValueLabel.text = [NSString stringWithFormat:@"%f", self.colorSlider.value];
     
-    self.view.backgroundColor = [UIColor colorWithWhite:self.colorSlider.value alpha:0.5];
+    self.tintValue = self.colorSlider.value;
+    
+    [self adjustBackgroundColor];
+}
+
+- (IBAction)alphaSliderValueChanged:(id)sender
+{
+    self.alphaSliderValueLabel.text = [NSString stringWithFormat:@"%f", self.alphaSlider.value];
+    
+    self.alphaValue = self.alphaSlider.value;
+    
+    [self adjustBackgroundColor];
+}
+
+- (void)adjustBackgroundColor
+{
+    self.view.backgroundColor = [UIColor colorWithWhite:self.tintValue alpha:self.alphaValue];
 }
 
 @end
