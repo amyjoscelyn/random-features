@@ -20,6 +20,7 @@
 		3D349A891BFA729F00764558 /* AMYItemChangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D349A881BFA729F00764558 /* AMYItemChangerViewController.m */; };
 		3DFD684B1BFA77F40067EE98 /* AMYGradientSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */; };
 		3DFD684E1BFB720E0067EE98 /* AMYGradientChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD684D1BFB720E0067EE98 /* AMYGradientChooserViewController.m */; };
+		3DFD68511BFBA9440067EE98 /* AMYColorChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD68501BFBA9440067EE98 /* AMYColorChooserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYGradientSliderViewController.m; sourceTree = "<group>"; };
 		3DFD684C1BFB720E0067EE98 /* AMYGradientChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYGradientChooserViewController.h; sourceTree = "<group>"; };
 		3DFD684D1BFB720E0067EE98 /* AMYGradientChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYGradientChooserViewController.m; sourceTree = "<group>"; };
+		3DFD684F1BFBA9440067EE98 /* AMYColorChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYColorChooserViewController.h; sourceTree = "<group>"; };
+		3DFD68501BFBA9440067EE98 /* AMYColorChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYColorChooserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				3DFD684A1BFA77F40067EE98 /* AMYGradientSliderViewController.m */,
 				3DFD684C1BFB720E0067EE98 /* AMYGradientChooserViewController.h */,
 				3DFD684D1BFB720E0067EE98 /* AMYGradientChooserViewController.m */,
+				3DFD684F1BFBA9440067EE98 /* AMYColorChooserViewController.h */,
+				3DFD68501BFBA9440067EE98 /* AMYColorChooserViewController.m */,
 				3D349A5A1BF69B9400764558 /* Assets.xcassets */,
 				3D349A5C1BF69B9400764558 /* LaunchScreen.storyboard */,
 				3D349A5F1BF69B9400764558 /* Info.plist */,
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D349A561BF69B9400764558 /* ViewController.m in Sources */,
+				3DFD68511BFBA9440067EE98 /* AMYColorChooserViewController.m in Sources */,
 				3DFD684B1BFA77F40067EE98 /* AMYGradientSliderViewController.m in Sources */,
 				3D349A831BF6CAFC00764558 /* AMYColorSliderViewController.m in Sources */,
 				3D349A891BFA729F00764558 /* AMYItemChangerViewController.m in Sources */,
