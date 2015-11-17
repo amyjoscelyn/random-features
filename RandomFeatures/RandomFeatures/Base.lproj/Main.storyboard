@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Emojis-->
         <scene sceneID="3Bv-ih-Tl6">
             <objects>
                 <viewController id="le6-h1-Idt" customClass="AMYItemChangerViewController" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                         <animations/>
                         <color key="backgroundColor" red="0.27127164819999999" green="0.79148275589999995" blue="0.79304887820000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Cx0-7X-uP5"/>
+                    <tabBarItem key="tabBarItem" title="Emojis" id="Cx0-7X-uP5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="itemLabel" destination="fAl-PD-x2o" id="LTH-E8-V5U"/>
@@ -394,7 +394,7 @@
             </objects>
             <point key="canvasLocation" x="1055" y="327"/>
         </scene>
-        <!--Item-->
+        <!--Controls-->
         <scene sceneID="TwL-9L-SJY">
             <objects>
                 <viewController id="tCX-8L-7WS" customClass="AMYGradientSliderViewController" sceneMemberID="viewController">
@@ -441,7 +441,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="trf-Lj-9Pd"/>
+                    <tabBarItem key="tabBarItem" title="Controls" id="trf-Lj-9Pd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="colorSlider" destination="Jyu-ew-y0t" id="D0e-vF-lRZ"/>
@@ -452,6 +452,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHv-E6-D32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-205" y="74"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Dxn-jg-JJW">
+            <objects>
+                <viewController id="jHX-19-1al" customClass="AMYGradientChooserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zo7-r0-vs9"/>
+                        <viewControllerLayoutGuide type="bottom" id="EmG-jN-Smn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oBh-1i-mxg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgV-o4-ear">
+                                <rect key="frame" x="168" y="379" width="132" height="132"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="hOi-vK-W8B" kind="embed" id="Zn8-n6-gEI"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="64O-Yy-wby"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cq6-S6-A1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="743"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K1c-Yb-LDA">
@@ -470,6 +500,7 @@
                         <segue destination="Tgm-02-Ky0" kind="relationship" relationship="viewControllers" id="mYD-t3-Si7"/>
                         <segue destination="le6-h1-Idt" kind="relationship" relationship="viewControllers" id="7bk-0o-o2q"/>
                         <segue destination="tCX-8L-7WS" kind="relationship" relationship="viewControllers" id="JTz-Ea-4Xk"/>
+                        <segue destination="jHX-19-1al" kind="relationship" relationship="viewControllers" id="6zu-WI-bOv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGr-fT-vjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -564,6 +595,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtF-mq-kiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759" y="956"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wec-vb-1Qp">
+            <objects>
+                <viewController id="hOi-vK-W8B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqu-Ot-Syn">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="132"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPS-Bc-6pa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

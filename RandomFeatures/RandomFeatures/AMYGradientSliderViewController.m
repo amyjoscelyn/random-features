@@ -125,7 +125,6 @@
             self.bottomAlphaFloat = self.colorSlider.value;
         }
     }
-    
     [self changeBackgroundGradient];
 }
 
@@ -166,7 +165,6 @@
             self.currentColor = @"Alpha";
             self.colorSlider.value = self.topAlphaFloat;
         }
-        
     }
     else
     {
@@ -190,7 +188,6 @@
             self.currentColor = @"Alpha";
             self.colorSlider.value = self.bottomAlphaFloat;
         }
-        
     }
 }
 
