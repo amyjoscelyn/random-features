@@ -964,6 +964,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="8Rp-Kd-7KO"/>
                                 <exclude reference="HRa-Qc-m91"/>
                                 <exclude reference="tZ2-fB-RMe"/>
                                 <exclude reference="0ea-Sz-BIi"/>
