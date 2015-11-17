@@ -641,8 +641,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxK-oX-VEn">
                                 <rect key="frame" x="0.0" y="0.0" width="119" height="135"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wh-Ru-ZvZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="360" height="135"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wh-Ru-ZvZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="135"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gbU-ER-Ujc">
                                                 <rect key="frame" x="0.0" y="0.0" width="360" height="135"/>
@@ -924,34 +924,52 @@
                                             <constraint firstItem="gbU-ER-Ujc" firstAttribute="width" secondItem="9wh-Ru-ZvZ" secondAttribute="width" id="DLU-ev-ZxX"/>
                                             <constraint firstAttribute="width" constant="360" id="OQ0-Um-aC5"/>
                                             <constraint firstItem="gbU-ER-Ujc" firstAttribute="height" secondItem="9wh-Ru-ZvZ" secondAttribute="height" id="Rpv-p5-tww"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="360" id="iRu-2n-UrZ"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="jdh-jn-htQ"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jdh-jn-htQ"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="height" secondItem="VxK-oX-VEn" secondAttribute="height" id="3a2-jc-j22"/>
-                                    <constraint firstAttribute="trailing" secondItem="9wh-Ru-ZvZ" secondAttribute="trailing" id="7Gy-NX-tex"/>
-                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="leading" secondItem="VxK-oX-VEn" secondAttribute="leading" id="9cn-ec-axX"/>
-                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="leading" secondItem="VxK-oX-VEn" secondAttribute="leading" id="Aaz-pE-4Ok"/>
-                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="top" secondItem="VxK-oX-VEn" secondAttribute="top" id="J9j-t0-EE5"/>
-                                    <constraint firstAttribute="bottom" secondItem="9wh-Ru-ZvZ" secondAttribute="bottom" id="nBO-i1-Mkf"/>
-                                    <constraint firstAttribute="bottom" secondItem="9wh-Ru-ZvZ" secondAttribute="bottom" id="ptB-eZ-KMM"/>
-                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="top" secondItem="VxK-oX-VEn" secondAttribute="top" id="wRu-FE-Gih"/>
-                                    <constraint firstAttribute="trailing" secondItem="9wh-Ru-ZvZ" secondAttribute="trailing" id="wok-lf-III"/>
+                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="top" secondItem="VxK-oX-VEn" secondAttribute="top" id="8BQ-7W-m21"/>
+                                    <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="leading" secondItem="VxK-oX-VEn" secondAttribute="leading" id="oOc-gu-UxK"/>
+                                    <constraint firstAttribute="bottom" secondItem="9wh-Ru-ZvZ" secondAttribute="bottom" id="tc8-kE-Sxg"/>
+                                    <constraint firstAttribute="trailing" secondItem="9wh-Ru-ZvZ" secondAttribute="trailing" id="yCL-ju-owP"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VxK-oX-VEn" firstAttribute="leading" secondItem="wqu-Ot-Syn" secondAttribute="leadingMargin" id="0ea-Sz-BIi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VxK-oX-VEn" secondAttribute="trailing" id="1bd-ZV-BRB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9wh-Ru-ZvZ" secondAttribute="trailing" constant="-261" id="8Rp-Kd-7KO"/>
+                            <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="leading" secondItem="wqu-Ot-Syn" secondAttribute="leadingMargin" constant="-20" id="HRa-Qc-m91"/>
+                            <constraint firstItem="VxK-oX-VEn" firstAttribute="top" secondItem="94i-6f-WvJ" secondAttribute="bottom" id="JHj-PH-7zK"/>
                             <constraint firstItem="VxK-oX-VEn" firstAttribute="bottom" secondItem="wqu-Ot-Syn" secondAttribute="bottomMargin" id="QdW-if-FY3"/>
                             <constraint firstItem="VxK-oX-VEn" firstAttribute="top" secondItem="wqu-Ot-Syn" secondAttribute="topMargin" id="Utx-v3-mnG"/>
                             <constraint firstAttribute="trailing" secondItem="VxK-oX-VEn" secondAttribute="trailing" id="VAw-eh-zq3"/>
                             <constraint firstItem="VxK-oX-VEn" firstAttribute="top" secondItem="wqu-Ot-Syn" secondAttribute="top" id="bmU-TA-lEy"/>
+                            <constraint firstItem="kSk-0z-YLq" firstAttribute="top" secondItem="9wh-Ru-ZvZ" secondAttribute="bottom" id="cHX-un-Xzg"/>
+                            <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="top" secondItem="94i-6f-WvJ" secondAttribute="bottom" id="gau-zi-DKP"/>
+                            <constraint firstItem="kSk-0z-YLq" firstAttribute="top" secondItem="VxK-oX-VEn" secondAttribute="bottom" id="lM4-7J-IW4"/>
                             <constraint firstItem="VxK-oX-VEn" firstAttribute="leading" secondItem="wqu-Ot-Syn" secondAttribute="leading" id="m5W-BU-2SN"/>
+                            <constraint firstItem="9wh-Ru-ZvZ" firstAttribute="width" secondItem="wqu-Ot-Syn" secondAttribute="width" id="tZ2-fB-RMe"/>
                             <constraint firstAttribute="bottom" secondItem="VxK-oX-VEn" secondAttribute="bottom" id="u8R-7L-ssM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HRa-Qc-m91"/>
+                                <exclude reference="tZ2-fB-RMe"/>
+                                <exclude reference="0ea-Sz-BIi"/>
+                                <exclude reference="1bd-ZV-BRB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="colorButtonFourEight" destination="ych-hs-Yhn" id="JhB-kA-U3j"/>
