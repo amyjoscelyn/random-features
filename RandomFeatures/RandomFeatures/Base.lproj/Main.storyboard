@@ -462,11 +462,11 @@
                         <viewControllerLayoutGuide type="bottom" id="EmG-jN-Smn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oBh-1i-mxg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgV-o4-ear">
-                                <rect key="frame" x="236" y="475" width="119" height="135"/>
+                                <rect key="frame" x="181" y="376" width="119" height="135"/>
                                 <animations/>
                                 <connections>
                                     <segue destination="hOi-vK-W8B" kind="embed" id="Zn8-n6-gEI"/>
@@ -477,7 +477,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="64O-Yy-wby"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cq6-S6-A1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y27-VA-Lav">
@@ -630,6 +630,10 @@
         <scene sceneID="Wec-vb-1Qp">
             <objects>
                 <viewController id="hOi-vK-W8B" customClass="AMYColorChooserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94i-6f-WvJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kSk-0z-YLq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wqu-Ot-Syn">
                         <rect key="frame" x="0.0" y="0.0" width="119" height="135"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -950,6 +954,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="colorButtonFourEight" destination="ych-hs-Yhn" id="JhB-kA-U3j"/>
+                        <outlet property="colorButtonFourEleven" destination="9ct-LF-F41" id="oaR-by-SdK"/>
+                        <outlet property="colorButtonFourFive" destination="wkF-cv-vDQ" id="TDB-7N-DGv"/>
+                        <outlet property="colorButtonFourFour" destination="5R5-nv-x31" id="nG7-pH-xTZ"/>
+                        <outlet property="colorButtonFourNine" destination="dn5-b9-3Ts" id="eXO-ld-Yeq"/>
+                        <outlet property="colorButtonFourOne" destination="Nvf-9k-iyb" id="Xru-1X-fzA"/>
+                        <outlet property="colorButtonFourSeven" destination="2U6-fC-RZR" id="Bw4-lb-Fv1"/>
+                        <outlet property="colorButtonFourSix" destination="MLz-1U-R9R" id="qpj-uQ-KIs"/>
+                        <outlet property="colorButtonFourTen" destination="uyu-eJ-5he" id="Yp3-Px-XxV"/>
+                        <outlet property="colorButtonFourThree" destination="hgZ-Bz-4tU" id="53b-Zw-TYO"/>
+                        <outlet property="colorButtonFourTwelve" destination="D5V-PQ-aQx" id="o4g-75-7Zz"/>
+                        <outlet property="colorButtonFourTwo" destination="pr4-LL-9eP" id="ifS-Zg-f8z"/>
                         <outlet property="colorButtonOneEight" destination="bs8-Zj-gpc" id="c7y-TT-ivD"/>
                         <outlet property="colorButtonOneEleven" destination="55X-Y4-5yI" id="SF4-cS-hh0"/>
                         <outlet property="colorButtonOneFive" destination="Wxo-lg-zrK" id="u3O-qG-c7v"/>
@@ -962,13 +978,29 @@
                         <outlet property="colorButtonOneThree" destination="Fx2-pD-7kS" id="6Zr-2d-q4P"/>
                         <outlet property="colorButtonOneTwelve" destination="jAX-Ea-i3v" id="p9l-Oh-1lR"/>
                         <outlet property="colorButtonOneTwo" destination="7BM-iV-7Dv" id="vpQ-18-fBe"/>
+                        <outlet property="colorButtonThreeEight" destination="MCI-8S-zVd" id="bl6-z2-Olt"/>
+                        <outlet property="colorButtonThreeEleven" destination="8SW-mh-yuS" id="nJY-L2-8Lk"/>
+                        <outlet property="colorButtonThreeFive" destination="3eI-2y-xdY" id="JOk-Fn-EmV"/>
+                        <outlet property="colorButtonThreeFour" destination="ELa-53-PQJ" id="KAz-cM-Sc3"/>
+                        <outlet property="colorButtonThreeNine" destination="stm-Xp-p1E" id="E2R-nq-HGw"/>
+                        <outlet property="colorButtonThreeOne" destination="Xdy-fp-vYE" id="46k-AI-Xiv"/>
+                        <outlet property="colorButtonThreeSeven" destination="XBh-9I-MSX" id="pN1-bb-Rnk"/>
+                        <outlet property="colorButtonThreeSix" destination="EOZ-bf-cYs" id="kRX-6t-Wkq"/>
+                        <outlet property="colorButtonThreeTen" destination="kYq-vA-6j4" id="G5e-qd-eJt"/>
+                        <outlet property="colorButtonThreeThree" destination="bja-Hb-IAl" id="IyZ-9y-RR0"/>
+                        <outlet property="colorButtonThreeTwelve" destination="fKx-hr-JDB" id="odI-yF-yqJ"/>
+                        <outlet property="colorButtonThreeTwo" destination="qGL-7K-NkX" id="L32-67-Rj4"/>
                         <outlet property="colorButtonTwoEight" destination="GiO-wI-X3D" id="dHV-vo-y2E"/>
+                        <outlet property="colorButtonTwoEleven" destination="W4W-kn-3XB" id="J2U-SH-F8S"/>
                         <outlet property="colorButtonTwoFive" destination="4EV-Fe-Cwa" id="irg-gB-s1u"/>
                         <outlet property="colorButtonTwoFour" destination="1Bk-zh-qdc" id="uZJ-r8-dOg"/>
+                        <outlet property="colorButtonTwoNine" destination="2Fi-eD-sBj" id="Vl2-tG-I7I"/>
                         <outlet property="colorButtonTwoOne" destination="F4w-9I-K6P" id="cu3-ju-0YQ"/>
                         <outlet property="colorButtonTwoSeven" destination="kIu-kT-u4s" id="Ymk-pK-w4c"/>
                         <outlet property="colorButtonTwoSix" destination="saz-vD-zWA" id="fHB-RZ-gUt"/>
+                        <outlet property="colorButtonTwoTen" destination="Efz-Io-mw8" id="Jsa-MY-1HJ"/>
                         <outlet property="colorButtonTwoThree" destination="w8v-TO-Kdx" id="XNC-Je-J7K"/>
+                        <outlet property="colorButtonTwoTwelve" destination="u0u-bE-Jfo" id="I75-3c-Eew"/>
                         <outlet property="colorButtonTwoTwo" destination="Psd-nA-UBU" id="Bnz-Rp-HVk"/>
                     </connections>
                 </viewController>
