@@ -7,7 +7,6 @@
 //
 
 #import "AMYColorChooserViewController.h"
-#import "AMYGradientChooserViewController.h"
 
 @interface AMYColorChooserViewController ()
 
@@ -20,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.bottomColor = [[UIColor alloc] init];
 }
 
 #pragma Color Row One Buttons
@@ -27,14 +27,8 @@
 - (IBAction)colorButtonTapped:(UIButton *)sender
 {
     self.bottomColor = sender.backgroundColor;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    NSLog(@"preparing for segue");
-    AMYGradientChooserViewController *gradientDVC = segue.destinationViewController;
-    gradientDVC.bottomColor = self.bottomColor;
-    gradientDVC.gradientLayer.colors = gradientDVC.colorsArray;
+    NSLog(@"%@", self.bottomColor);
+    [self.delegate bottomColorHasChanged:self.bottomColor];
 }
 
 @end

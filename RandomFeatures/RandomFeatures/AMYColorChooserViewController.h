@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class AMYColorChooserViewController;
+
+@protocol AMYColorChooserViewControllerDelegate <NSObject>
+
+- (void)bottomColorHasChanged:(UIColor *)color;
+
+@end
+
 @interface AMYColorChooserViewController : UIViewController
+
+@property (weak, nonatomic) id<AMYColorChooserViewControllerDelegate> delegate;
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import "AMYGradientChooserViewController.h"
+#import "AMYColorChooserViewController.h"
 
-@interface AMYGradientChooserViewController ()
+@interface AMYGradientChooserViewController () <AMYColorChooserViewControllerDelegate>
 
 @end
 
@@ -22,13 +23,27 @@
     self.gradientLayer.frame = self.view.frame;
     [self.view.layer insertSublayer:self.gradientLayer atIndex:0];
     
-    self.topColor = [UIColor whiteColor];
+    self.topColor = [UIColor lightGrayColor];
     self.bottomColor = [UIColor whiteColor];
     
-    NSMutableArray *colorsArray = [[NSMutableArray alloc] init];
-    [colorsArray addObject:(id)self.topColor.CGColor];
-    [colorsArray addObject:(id)self.bottomColor.CGColor];
-    self.gradientLayer.colors = colorsArray;
+    self.colorsArray = [[NSMutableArray alloc] init];
+    [self.colorsArray addObject:(id)self.topColor.CGColor];
+    [self.colorsArray addObject:(id)self.bottomColor.CGColor];
+    self.gradientLayer.colors = self.colorsArray;
+}
+
+- (void)bottomColorHasChanged:(UIColor *)color
+{
+    self.bottomColor = color;
+    [self.colorsArray addObject:(id)self.bottomColor.CGColor];
+    self.gradientLayer.colors = self.colorsArray;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"is this preparing?");
+    AMYColorChooserViewController *colorChooserDVC = segue.destinationViewController;
+    colorChooserDVC.delegate = self;
 }
 
 //  If I have a container view in the top and bottom corners, it can contain a collection view of buttons... or a scroll view of them.  Each button has its own color, buttons side by side in a grid, and when you choose one the color of that side of the gradient changes to match.
