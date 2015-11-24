@@ -71,6 +71,254 @@
     [super viewDidLoad];
 }
 
+- (IBAction)colorButtonOneOneTapped:(id)sender
+{
+    NSLog(@"tapped!");
+}
+
+#pragma Color Row One Buttons
+
+- (IBAction)colorButtonOneTwoTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneThreeTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneFourTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneFiveTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneSixTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneSevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneEightTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneNineTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneTenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneElevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonOneTwelveTapped:(id)sender
+{
+    
+}
+
+#pragma Color Row Two Buttons
+
+- (IBAction)colorButtonTwoOneTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoTwoTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoThreeTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoFourTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoFiveTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoSixTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoSevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoEightTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoNineTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoTenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoElevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonTwoTwelveTapped:(id)sender
+{
+    
+}
+
+#pragma Color Row Three Buttons
+
+- (IBAction)colorButtonThreeOneTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeTwoTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeThreeTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeFourTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeFiveTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeSixTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeSevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeEightTapped:(id)sender
+{
+
+}
+
+- (IBAction)colorButtonThreeNineTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeTenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeElevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonThreeTwelveTapped:(id)sender
+{
+    
+}
+
+#pragma Color Row Four Buttons
+
+- (IBAction)colorButtonFourOneTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourTwoTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourThreeTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourFourTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourFiveTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourSixTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourSevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourEightTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourNineTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourTenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourElevenTapped:(id)sender
+{
+    
+}
+
+- (IBAction)colorButtonFourTwelveTapped:(id)sender
+{
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
