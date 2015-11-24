@@ -10,4 +10,9 @@
 
 @interface AMYGradientChooserViewController : UIViewController
 
+@property (nonatomic, strong) CAGradientLayer *gradientLayer;
+@property (nonatomic, strong) NSMutableArray *colorsArray;
+@property (nonatomic, strong) UIColor *topColor;
+@property (nonatomic, strong) UIColor *bottomColor;
+
 @end
