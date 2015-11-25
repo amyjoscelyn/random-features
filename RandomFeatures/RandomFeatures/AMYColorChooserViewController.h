@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class AMYColorChooserViewController;
 
 @protocol AMYColorChooserViewControllerDelegate <NSObject>

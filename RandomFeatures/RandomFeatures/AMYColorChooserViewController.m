@@ -22,8 +22,6 @@
     self.bottomColor = [[UIColor alloc] init];
 }
 
-#pragma Color Row One Buttons
-
 - (IBAction)colorButtonTapped:(UIButton *)sender
 {
     self.bottomColor = sender.backgroundColor;
