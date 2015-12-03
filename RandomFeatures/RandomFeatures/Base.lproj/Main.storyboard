@@ -453,7 +453,7 @@
             </objects>
             <point key="canvasLocation" x="-205" y="74"/>
         </scene>
-        <!--Item-->
+        <!--Rainbow-->
         <scene sceneID="Dxn-jg-JJW">
             <objects>
                 <viewController id="jHX-19-1al" customClass="AMYGradientChooserViewController" sceneMemberID="viewController">
@@ -476,7 +476,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="64O-Yy-wby"/>
+                    <tabBarItem key="tabBarItem" title="Rainbow" id="64O-Yy-wby"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cq6-S6-A1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -756,61 +756,97 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="OUY-cB-Tvu"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psd-nA-UBU">
                                                                 <rect key="frame" x="30" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="4Di-6r-blZ"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8v-TO-Kdx">
                                                                 <rect key="frame" x="60" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Yo9-Qq-DOd"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bk-zh-qdc">
                                                                 <rect key="frame" x="90" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="fBc-mK-cen"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-Fe-Cwa">
                                                                 <rect key="frame" x="120" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="gWR-Lg-xJl"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saz-vD-zWA">
                                                                 <rect key="frame" x="150" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="aMU-on-cBq"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIu-kT-u4s">
                                                                 <rect key="frame" x="180" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="xNh-9W-UAR"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiO-wI-X3D">
                                                                 <rect key="frame" x="210" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="9vB-Z7-mdB"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fi-eD-sBj">
                                                                 <rect key="frame" x="240" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="zWC-1X-RLx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efz-Io-mw8">
                                                                 <rect key="frame" x="270" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Pbg-H8-o6S"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-kn-3XB">
                                                                 <rect key="frame" x="300" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="2c8-tC-Rn6"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0u-bE-Jfo">
                                                                 <rect key="frame" x="330" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="twj-8p-HYG"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <animations/>
@@ -822,61 +858,97 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Mo5-Xp-DKr"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGL-7K-NkX">
                                                                 <rect key="frame" x="30" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="j9s-id-ccl"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-Hb-IAl">
                                                                 <rect key="frame" x="60" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Gdy-xK-yZR"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELa-53-PQJ">
                                                                 <rect key="frame" x="90" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="VAD-Jy-zOz"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-2y-xdY">
                                                                 <rect key="frame" x="120" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="eFx-Sb-fp9"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-bf-cYs">
                                                                 <rect key="frame" x="150" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="JA1-nG-YjY"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-9I-MSX">
                                                                 <rect key="frame" x="180" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Krx-Dy-f3M"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-8S-zVd">
                                                                 <rect key="frame" x="210" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="nWY-Bv-XJT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stm-Xp-p1E">
                                                                 <rect key="frame" x="240" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="xHS-aD-0tv"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYq-vA-6j4">
                                                                 <rect key="frame" x="270" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="YE3-eT-PD5"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SW-mh-yuS">
                                                                 <rect key="frame" x="300" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="BdE-tG-g8e"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKx-hr-JDB">
                                                                 <rect key="frame" x="330" y="0.0" width="30" height="33"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="wXh-Ut-ppy"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <animations/>
@@ -888,61 +960,97 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="WGf-sz-MNl"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-LL-9eP">
                                                                 <rect key="frame" x="30" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Yay-96-m8Z"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-Bz-4tU">
                                                                 <rect key="frame" x="60" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="pBl-EP-98M"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R5-nv-x31">
                                                                 <rect key="frame" x="90" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="sQB-Q0-3JL"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkF-cv-vDQ">
                                                                 <rect key="frame" x="120" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="fxc-yr-Z6X"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLz-1U-R9R">
                                                                 <rect key="frame" x="150" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="rL6-L0-Xse"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-fC-RZR">
                                                                 <rect key="frame" x="180" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="55T-Hc-R3w"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ych-hs-Yhn">
                                                                 <rect key="frame" x="210" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="Rjy-0Y-8pA"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-b9-3Ts">
                                                                 <rect key="frame" x="240" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="IOe-Sn-roG"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyu-eJ-5he">
                                                                 <rect key="frame" x="270" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="0Rv-I6-hW1"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ct-LF-F41">
                                                                 <rect key="frame" x="300" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="wo4-l8-ENf"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-PQ-aQx">
                                                                 <rect key="frame" x="330" y="0.0" width="30" height="34"/>
                                                                 <animations/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <connections>
+                                                                    <action selector="colorButtonTapped:" destination="hOi-vK-W8B" eventType="touchUpInside" id="FFB-cz-LAL"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <animations/>
